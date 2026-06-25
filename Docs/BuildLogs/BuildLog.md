@@ -72,3 +72,14 @@
 ### Problem Encountered:
     - No problems were encountered during this session.
 
+## Session 6: 2026-06-25
+### Duration: 2 Hours
+### Tasks:
+    - Implemented the `set` and `get` methods for the `HashMap` class.
+    - Implemented the `hash` and `rehash` method to handle resizing of the hash map when the load factor exceeds a certain threshold.
+    - Added unit tests for the `HashMap` class to verify the functionality of the `set`, `get`, and `rehash` methods.
+    - Implemented the `clear` and `copyFrom` methods for the `HashMap` class to handle clearing the hash map and copying from another hash map.
+    - Implemented the `loadFactor` method to calculate the current load factor of the hash map.
+
+### Problem Encountered:
+    - A Memory leak was detected in the `HashMap` class due to improper memory management. Resolved by ensuring that all dynamically allocated memory is properly freed in the destructor and when clearing the hash map.
